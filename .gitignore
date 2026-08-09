@@ -1,0 +1,29 @@
+# Dados sensíveis / brutos - não versionar
+data/
+*.csv
+*.xlsx
+*.xls
+Base_de_dados*
+BASE_DE_DADOS*
+PEDE_PASSOS*
+
+# Exceções: manter os PDFs de dicionário/enunciado, se quiser versionar
+!Dicionário_Dados_Datathon.pdf
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+*.egg-info/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
