@@ -13,9 +13,10 @@ st.set_page_config(
 # --------------------------------------------------------------------------
 # Carregamento do modelo e artefatos
 # --------------------------------------------------------------------------
-CAMINHO_MODELO = os.path.join("modelo", "modelo_risco_defasagem.pkl")
-CAMINHO_MEDIANAS = os.path.join("modelo", "medianas_features.pkl")
-CAMINHO_FEATURES = os.path.join("modelo", "lista_features.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CAMINHO_MODELO = os.path.join(BASE_DIR, "modelo", "modelo_risco_defasagem.pkl")
+CAMINHO_MEDIANAS = os.path.join(BASE_DIR, "modelo", "medianas_features.pkl")
+CAMINHO_FEATURES = os.path.join(BASE_DIR, "modelo", "lista_features.pkl")
 
 @st.cache_resource
 def carregar_artefatos():
